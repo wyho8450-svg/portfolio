@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyatt Holtzinger | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Wyatt Holtzinger, a CU Boulder architecture student working across architecture, fabrication, furniture, and built details."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="data.js"></script>
+    <script defer src="site.js"></script>
+  </head>
+  <body data-depth="root">
+    <header class="site-header" data-nav></header>
+
+    <main class="content-shell content-shell--home">
+      <section class="hero hero--banner" data-home-hero>
+        <div class="hero-slides" data-hero-slides></div>
+        <div class="hero-overlay"></div>
+        <button class="hero-arrow hero-arrow--prev" type="button" data-hero-prev aria-label="Previous slide">
+          <span aria-hidden="true">&#8592;</span>
+        </button>
+        <button class="hero-arrow hero-arrow--next" type="button" data-hero-next aria-label="Next slide">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+        <div class="hero-copy hero-copy--banner">
+          <div>
+            <p class="eyebrow">Portfolio</p>
+            <h1>Wyatt Holtzinger</h1>
+            <p>
+              Architecture student at CU Boulder working across architecture, furniture, metalwork, and fabrication.
+              The work is grounded in making, material sensitivity, and carrying ideas carefully from concept to built form.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="resume-link" href="resume/resume.pdf" target="_blank" rel="noreferrer">Open Resume</a>
+            <a class="about-link" href="about.html">About Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2 class="section-heading">Projects</h2>
+          </div>
+          <p class="section-note">
+            A focused collection of architectural and fabrication work where images lead and process, role, and context
+            follow.
+          </p>
+        </div>
+
+        <div class="project-grid" data-project-grid></div>
+      </section>
+    </main>
+
+    <footer class="footer-shell" data-footer></footer>
+  </body>
+</html>
