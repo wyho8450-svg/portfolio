@@ -44,12 +44,12 @@ window.portfolioData = {
       images: [
         { path: "projects/freefall/images/render_01.png", type: "image", layout: "hero", alt: "Exterior rendering of Freefall in an autumn grove." },
         { path: "projects/freefall/images/image_01.JPG", type: "image", layout: "feature", alt: "Primary project image for Freefall." },
-        { path: "projects/freefall/images/render_02.png", type: "image", layout: "feature", alt: "Atmospheric rendering of Freefall with water and landscape." },
-        { path: "projects/freefall/images/section_01.png", type: "image", layout: "pair", alt: "Section drawing for Freefall." },
-        { path: "projects/freefall/images/plan_01.png", type: "image", layout: "pair", alt: "Plan drawing for Freefall." },
-        { path: "projects/freefall/images/image_02.png", type: "image", layout: "pair", alt: "Supplemental drawing for Freefall." },
+        { path: "projects/freefall/images/image_02.png", type: "image", layout: "feature", alt: "Supplemental drawing for Freefall." },
+        { path: "projects/freefall/images/section_01.png", type: "image", layout: "feature", alt: "Section drawing for Freefall." },
+        { path: "projects/freefall/images/plan_01.png", type: "image", layout: "feature", alt: "Plan drawing for Freefall." },
         { path: "projects/freefall/images/image_03.JPG", type: "image", layout: "pair", alt: "Additional image for Freefall." },
         { path: "projects/freefall/images/image_04.JPG", type: "image", layout: "pair", alt: "Additional site or process image for Freefall." },
+        { path: "projects/freefall/images/render_02.png", type: "image", layout: "pair", alt: "Atmospheric rendering of Freefall with water and landscape." },
         { path: "projects/freefall/images/image_05.jpg", type: "image", layout: "pair", alt: "Additional image for Freefall." }
       ]
     },

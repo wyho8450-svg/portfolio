@@ -1,4 +1,11 @@
 const siteData = window.portfolioData;
+const homepageProjectOrder = [
+  "meadows-rail",
+  "freefall",
+  "grove-hooks",
+  "nalof-table",
+  "magnetic-ltd"
+];
 
 function buildNavigation(currentPath) {
   return `
@@ -85,19 +92,12 @@ function getProjectDescriptionParagraphs(project) {
 
 function renderHomepageGrid() {
   const grid = document.querySelector("[data-project-grid]");
-  const homepageOrder = [
-    "meadows-rail",
-    "freefall",
-    "grove-hooks",
-    "nalof-table",
-    "magnetic-ltd"
-  ];
 
   if (!grid) {
     return;
   }
 
-  const orderedProjects = homepageOrder
+  const orderedProjects = homepageProjectOrder
     .map((slug) => siteData.projects.find((project) => project.slug === slug))
     .filter(Boolean);
 
@@ -236,8 +236,11 @@ function renderProjectPage() {
   const nextProjectHost = document.querySelector("[data-next-project]");
 
   if (nextProjectHost) {
-    const currentIndex = siteData.projects.findIndex((entry) => entry.slug === slug);
-    const nextProject = siteData.projects[(currentIndex + 1) % siteData.projects.length];
+    const orderedProjects = homepageProjectOrder
+      .map((projectSlug) => siteData.projects.find((entry) => entry.slug === projectSlug))
+      .filter(Boolean);
+    const currentIndex = orderedProjects.findIndex((entry) => entry.slug === slug);
+    const nextProject = orderedProjects[(currentIndex + 1) % orderedProjects.length];
 
     nextProjectHost.innerHTML = `
       <a class="next-project-link" href="${nextProject.slug}.html">
