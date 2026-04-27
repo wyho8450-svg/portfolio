@@ -514,6 +514,117 @@ p {
   color: var(--accent);
 }
 
+/* Temporary CMDP media portfolio styles; safe to remove with the media-portfolio entry. */
+.media-portfolio-facts {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.media-portfolio-flow {
+  display: grid;
+  gap: clamp(3rem, 6vw, 5rem);
+}
+
+.media-portfolio-modules {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2vw, 2rem);
+}
+
+.media-portfolio-module-link {
+  display: block;
+}
+
+.media-portfolio-module-media {
+  background: #f2ede7;
+}
+
+.media-portfolio-module-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.media-portfolio-module-copy {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.media-portfolio-chapter-link {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line);
+  transition: color 180ms ease;
+}
+
+.media-portfolio-module-link:hover,
+.media-portfolio-chapter-link:hover {
+  color: var(--accent);
+}
+
+.media-portfolio-module h2,
+.media-portfolio-chapter-link strong {
+  margin: 0;
+  color: var(--accent);
+  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  font-weight: 200;
+  line-height: 1.02;
+}
+
+.media-portfolio-module p:last-child,
+.media-portfolio-chapter-link span {
+  color: var(--text);
+}
+
+.media-portfolio-chapter-nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.media-portfolio-intro,
+.media-portfolio-section {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+.media-portfolio-section {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.media-portfolio-intro-copy,
+.media-portfolio-section-text {
+  max-width: 54rem;
+}
+
+.media-portfolio-section-copy {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.media-portfolio-section-copy h2 {
+  margin: 0;
+  color: var(--accent);
+  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 200;
+  line-height: 1.02;
+}
+
+.media-portfolio-video {
+  width: 100%;
+  background: #f2ede7;
+  box-shadow: var(--shadow);
+}
+
+.media-portfolio-caption {
+  margin-top: 0.75rem;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
 .project-pagination {
   padding-top: 1rem;
   border-top: 1px solid var(--line);
@@ -562,6 +673,15 @@ p {
   .footer-grid,
   .about-notes {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .media-portfolio-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .media-portfolio-modules,
+  .media-portfolio-chapter-nav {
+    grid-template-columns: 1fr;
   }
 }
 
